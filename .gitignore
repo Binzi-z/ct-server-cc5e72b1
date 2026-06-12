@@ -1,0 +1,27 @@
+# Project Files
+passwords.py
+faf-server.pem
+GeoLite2-Country.mmdb
+
+# Generated files
+.cache
+.hypothesis
+.mypy_cache
+.pytest_cache
+.coverage
+.vagrant
+htmlcov
+*.pyc
+*.egg-info/
+*.swp
+
+# Virtualenv
+py3env
+develop_venv/
+.venv
+
+# Misc
+.idea/
+logs/
+*.bak
+*.iml

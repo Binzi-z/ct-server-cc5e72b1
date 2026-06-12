@@ -1,0 +1,15 @@
+faf-stack*
+faf-db*
+
+# Hidden files
+.*
+!.git
+
+# Development files
+__pycache__
+*.bak
+*.mmdb
+*tests
+dev-config.yml
+Dockerfile
+scripts
