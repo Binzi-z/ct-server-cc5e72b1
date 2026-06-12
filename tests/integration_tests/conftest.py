@@ -42,6 +42,20 @@ from server.servercontext import ServerContext
 from tests.utils import exhaust_callbacks
 
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--generate-transcripts",
+        action="store_true",
+        default=False,
+        help="Generate golden transcript files instead of comparing against them",
+    )
+
+
+@pytest.fixture
+def generate_transcripts(request):
+    return request.config.getoption("--generate-transcripts")
+
+
 @pytest.fixture
 def mock_games():
     return mock.create_autospec(GameService)
